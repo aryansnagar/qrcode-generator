@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Static QR Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <!--<div class="container">
+        <h1>QR Code Generator</h1>
+        <p>Convert text or URLs directly to a static QR code.</p>
+        
+        <input type="text" id="qr-input" placeholder="Paste link or type here..." autocomplete="off">
+        <button id="generate-btn">Generate QR Code</button>
+
+        <div id="qrcode-container">
+        </div>
+    </div>-->
+    
+    <div class="container">
+        <h1>QR Code Generator</h1>
+        <p>Convert text or URLs directly to a static QR code.</p>
+        
+        <input type="text" id="qr-input" placeholder="Paste link or type here..." autocomplete="off">
+        <button id="generate-btn">Generate QR Code</button>
+    
+        <div id="qrcode-container">
+            </div>
+    
+        <button id="download-btn" style="display: none; background-color: #28a745; margin-top: 15px;">
+            Download QR Code
+        </button>
+    </div>
+
+    <script src="logic.js"></script>
+</body>
+</html>
