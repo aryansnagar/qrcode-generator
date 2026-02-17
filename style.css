@@ -1,68 +1,80 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+* {
     margin: 0;
+    padding: 0;
+    font-family: system-ui, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
 }
 
-.container {
-    background: white;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    text-align: center;
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    min-height: 100vh;
+}
+
+#container {
+    width: calc(100% - 20px);
     max-width: 400px;
-    width: 90%;
+    height: fit-content;
+}
+
+h1 {
+    width: fit-content;
+    height: fit-content;
+    margin: 0 0 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p {
+    width: fit-content;
+    height: fit-content;
+    color: #ababab;
 }
 
 input {
-    width: 100%;
-    padding: 12px;
-    margin: 20px 0;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    box-sizing: border-box;
+    width: calc(100% - 40px);
+    height: fit-content;
+    padding: 10px 20px;
+    margin: 40px 0 10px 0;
+    border: 1px solid #ababab;
+    border-radius: 4px;
 }
 
 button {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-weight: bold;
     width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-button:hover {
-    background-color: #0056b3;
+#generate-btn {
+    background-color: #002b64;
 }
 
-#qrcode-container {
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
+#generate-btn:hover {
+    background-color: #03234f;
 }
 
-/* Ensure the generated image is responsive */
-#qrcode-container img {
-    border: 4px solid white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+#download-btn {
+    visibility: hidden;
+    background-color: #436c32;
 }
 
-
-/* Add this to your existing CSS */
 #download-btn:hover {
-    background-color: #218838 !important;
+    background-color: #194f03;
 }
 
 #qrcode-container {
-    padding: 10px;
-    background: #fff;
-    display: inline-block;
-    margin: 20px auto;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    padding: 30px 0;
 }

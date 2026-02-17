@@ -3,10 +3,9 @@ const generateBtn = document.getElementById('generate-btn');
 const downloadBtn = document.getElementById('download-btn');
 const qrContainer = document.getElementById('qrcode-container');
 
-// Initialize the QRCode object
 const qrcode = new QRCode(qrContainer, {
-    width: 256,
-    height: 256,
+    width: 200,
+    height: 200,
     colorDark: "#000000",
     colorLight: "#ffffff",
     correctLevel: QRCode.CorrectLevel.H
@@ -14,23 +13,15 @@ const qrcode = new QRCode(qrContainer, {
 
 function generateQR() {
     const data = qrInput.value.trim();
-    
     if (data === "") {
         alert("Please enter some text or a URL!");
         return;
     }
-    
-    qrcode.makeCode(data);
-    
-    // Show the download button after a tiny delay to ensure the QR is rendered
-    setTimeout(() => {
-        downloadBtn.style.display = "block";
-    }, 100);
+  qrcode.makeCode(data);
+  downloadBtn.style.visibility = "visible";
 }
 
-// Download Logic
 downloadBtn.addEventListener('click', () => {
-    // Find the canvas element created by QRCode.js
     const canvas = qrContainer.querySelector('canvas');
     if (canvas) {
         const image = canvas.toDataURL("image/png");
@@ -42,7 +33,6 @@ downloadBtn.addEventListener('click', () => {
 });
 
 generateBtn.addEventListener('click', generateQR);
-
 qrInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') generateQR();
 });
