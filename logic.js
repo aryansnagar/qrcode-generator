@@ -35,4 +35,29 @@ downloadBtn.addEventListener('click', () => {
 generateBtn.addEventListener('click', generateQR);
 qrInput.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') generateQR();
+
 });
+
+
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
+//yellow yellow yellow yellow yellow yellow yellow yellow yellow
